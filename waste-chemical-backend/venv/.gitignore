@@ -29,6 +29,7 @@ Thumbs.db
 # Local env files
 .env
 .env.*
+pyvenv.cfg
 
 # Database
 *.sqlite3
