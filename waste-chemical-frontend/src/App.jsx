@@ -9,13 +9,11 @@ import ChemicalManagement from './components/ChemicalManagement'
 import Analytics from './components/Analytics'
 import Exports from './components/Exports'
 import ActivityLog from './components/ActivityLog'
+import UserManagement from './components/UserManagement' // Import new page
 import Login from './components/Auth/Login'
 import Register from './components/Auth/Register'
 import ProtectedRoute from './components/Auth/ProtectedRoute'
 import './App.css'
-// We no longer need parseISO here as it will be handled in each component
-
-// The global JSON.parse override has been REMOVED.
 
 function App() {
   return (
@@ -38,6 +36,7 @@ function App() {
                       <Route path="/analytics" element={<Analytics />} />
                       <Route path="/activity-log" element={<ActivityLog />} />
                       <Route path="/exports" element={<Exports />} />
+                      <Route path="/user-management" element={<UserManagement />} />
                     </Routes>
                   </Layout>
                 </ProtectedRoute>
